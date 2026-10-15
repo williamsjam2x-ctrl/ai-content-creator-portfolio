@@ -3,3 +3,12 @@
 
 /* Case-study page navigation: match the main portfolio header. */
 .nav.wrap{min-height:76px;width:min(1120px,calc(100% - 44px));margin:0 auto;padding:14px 0;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line);background:#fff}.nav.wrap .brand{display:flex;align-items:center;gap:8px;color:var(--ink);font-size:20px;font-weight:850;text-decoration:none}.nav.wrap .brand span{color:var(--sky-deep)}.nav.wrap nav{display:flex;align-items:center;gap:24px}.nav.wrap nav a{color:var(--ink);font-size:13px;font-weight:700;text-decoration:none}.nav.wrap nav a:hover{color:var(--sky-deep)}@media(max-width:650px){.nav.wrap{width:calc(100% - 36px);align-items:flex-start;flex-direction:column;gap:12px}.nav.wrap nav{width:100%;justify-content:space-between;gap:12px;flex-wrap:wrap}.nav.wrap nav a{font-size:12px}}
+
+
+/* Profile photo repair: shared JPEG asset on both pages. */
+.profile-photo{display:block;width:min(100%,190px);height:auto;aspect-ratio:3/4;object-fit:cover;object-position:center 35%;border-radius:18px;margin:0 auto 1rem;border:3px solid #fff;box-shadow:0 10px 28px rgba(16,40,59,.14)}
+.portrait-fallback{display:none}
+.cv-intro{position:relative}
+.cv-profile-photo{float:right;width:104px;height:132px;object-fit:cover;object-position:center 35%;border-radius:10px;margin:0 0 14px 22px;border:2px solid #eaf6ff}
+@media(max-width:520px){.profile-photo{width:min(68%,170px);margin-bottom:.85rem}.cv-profile-photo{float:none;display:block;width:88px;height:112px;margin:0 0 14px}}
+@media print{.cv-profile-photo{width:86px;height:108px;border:1px solid #d8e8fd;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
