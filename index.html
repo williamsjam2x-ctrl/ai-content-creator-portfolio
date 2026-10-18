@@ -26,18 +26,21 @@
 <section class="hero section-wrap">
 <div class="hero-copy">
 <p class="eyebrow"><span class="status-dot"></span> OPEN TO REMOTE OPPORTUNITIES</p>
-<h1>I turn ideas into <span>clear content</span> and repeatable workflows.</h1>
-<p class="hero-lede">I’m Oyatope Taiwo, an AI content creator and automation specialist with two years of experience in the field. I develop audience-focused content, scripts and production workflows using AI tools, creative judgement and structured quality checks.</p>
+<p class="name-kicker">PORTFOLIO · 2026</p>
+<h1 class="name-display">Oyatope <span>Taiwo.</span></h1>
+<p class="hero-role">AI Automation Expert &amp; Consultant · AI Content Creator</p>
+<h2 class="hero-statement">I turn ideas into <span>clear content</span> and repeatable workflows.</h2>
+<p class="hero-lede">I’m an AI content creator and automation practitioner with two years of experience in the field. I develop audience-focused content, scripts and production workflows using AI tools, creative judgement and structured quality checks.</p>
 <div class="hero-actions"><a class="button primary" href="#work">See how I work <span aria-hidden="true">↘</span></a><a class="button secondary" href="cv.html">Read my CV</a></div>
 <div class="quick-facts"><span>Scriptwriting & story development</span><span>Short-form video planning</span><span>Workflow design & QA</span></div>
 </div>
 <aside class="profile-card" aria-label="Profile">
 <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of Oyatope Taiwo" width="240" height="320" decoding="async" fetchpriority="high">
-<p class="profile-label">CONTENT + CREATIVE TECHNOLOGY</p><h2>Oyatope Taiwo</h2><p>AI Content Creator · Scriptwriter · Creative Technology Specialist</p>
+<p class="profile-label">PROFILE · CREATIVE TECHNOLOGY</p><h2>Oyatope Taiwo</h2><p>AI Automation · Content · Scriptwriting</p>
 <a href="mailto:klaviyotaiwotaiwo6@gmail.com">klaviyotaiwotaiwo6@gmail.com</a>
 <a href="tel:+2348069262165">Call: +234 806 926 2165</a>
 <a href="https://wa.me/2348069262165" target="_blank" rel="noopener" aria-label="Chat with Oyatope Taiwo on WhatsApp">WhatsApp: +234 806 926 2165 ↗</a>
-<span class="location">Ile-Ife, Osun State, Nigeria · Remote</span>
+<span class="location"><span class="location-dot"></span> Ile-Ife, Osun State, Nigeria · Remote</span>
 </aside>
 </section>
 <section class="trust-strip" aria-label="Working principles"><div><strong>01</strong><span>Research before<br>production</span></div><div><strong>02</strong><span>Human review at<br>important checkpoints</span></div><div><strong>03</strong><span>Consistent visuals,<br>careful quality review</span></div></section>
@@ -91,5 +94,21 @@
 
 <section class="contact-invitation" aria-label="Professional enquiries"><h2>Let’s Connect</h2><p>Questions, project enquiries, or interview opportunities? For more information about my work, please contact me on WhatsApp.</p><p><a class="button primary" href="https://wa.me/2348069262165" target="_blank" rel="noopener">Contact me on WhatsApp ↗</a></p></section>
 </main>
-<footer class="site-footer"><span>© 2026 Oyatope Taiwo</span><span>AI Content · Scriptwriting · Creative Technology</span><a href="mailto:klaviyotaiwotaiwo6@gmail.com">Email</a><a href="tel:+2348069262165">Call</a><a href="https://wa.me/2348069262165" target="_blank" rel="noopener">WhatsApp</a></footer>
+<footer class="site-footer"><span>© 2026 Oyatope Taiwo</span><span>AI Automation · Content · Creative Technology</span><a href="mailto:klaviyotaiwotaiwo6@gmail.com">Email</a><a href="tel:+2348069262165">Call</a><a href="https://wa.me/2348069262165" target="_blank" rel="noopener">WhatsApp</a></footer>
+<script>
+(function(){
+ const links=[...document.querySelectorAll('.site-header nav a[href^="#"]')];
+ const sections=links.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
+ if("IntersectionObserver" in window){
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(link=>{const active=link.getAttribute('href')==='#'+entry.target.id;link.classList.toggle('is-active',active);if(active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current')})}}),{rootMargin:"-25% 0px -60% 0px"});
+  sections.forEach(section=>observer.observe(section));
+ }
+ const revealTargets=document.querySelectorAll('.section-heading,.project-card,.skill-card,.about-section,.trust-strip div');
+ if("IntersectionObserver" in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  revealTargets.forEach(el=>el.classList.add('reveal-ready'));
+  const reveal=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');reveal.unobserve(entry.target)}}),{threshold:.08});
+  revealTargets.forEach(el=>reveal.observe(el));
+ }
+})();
+</script>
 </body></html>
