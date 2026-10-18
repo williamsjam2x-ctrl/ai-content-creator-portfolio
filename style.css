@@ -118,7 +118,7 @@ body.welcome-open{overflow:hidden}
 
 /* Dark-slate visual refresh inspired by the reference portfolio.
    Original portfolio copy and project content remain Oyatope Taiwo's own. */
-:root{
+body:not(.cv-page){
  --sky:#a8dadc;--sky-deep:#1e90ff;--sky-pale:#26394b;--sky-wash:#172538;
  --ink:#f4f7fb;--muted:#c2ccda;--line:#3a4b60;--white:#fff;--navy:#0f172a;
  --radius:14px;--shadow:0 16px 38px rgba(0,0,0,.2);
