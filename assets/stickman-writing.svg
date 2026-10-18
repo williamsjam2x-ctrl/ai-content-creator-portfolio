@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-labelledby="title desc">
+<title id="title">Stickman planning a video script at a desk</title><desc id="desc">A flat two-dimensional stickman with a pale oval head, chunky dark hair and brown tunic sits at a desk and writes a video script with a pen. A sheet on the desk is labelled SCRIPT.</desc>
+<rect width="900" height="540" rx="26" fill="#f2f8fc"/><circle cx="700" cy="115" r="86" fill="#d9edfb"/><path d="M0 440H900" stroke="#c7dce9" stroke-width="3"/>
+<!-- wall notes --> <rect x="605" y="70" width="180" height="122" rx="10" fill="#fff" stroke="#b9d5e8" stroke-width="3"/><text x="630" y="104" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#176b9e">STORY BEATS</text><path d="M630 126H755M630 148H730M630 170H746" stroke="#9abdd5" stroke-width="7" stroke-linecap="round"/>
+<!-- chair --> <path d="M255 305V418Q255 437 275 437H355" fill="none" stroke="#203449" stroke-width="18" stroke-linecap="round"/>
+<!-- stickman head --> <ellipse cx="385" cy="155" rx="69" ry="78" fill="#fff" stroke="#203449" stroke-width="7"/><path d="M320 143Q305 94 348 77Q385 55 425 79Q456 96 451 132Q425 108 399 105Q363 130 320 143Z" fill="#243449"/><circle cx="366" cy="156" r="5" fill="#203449"/><circle cx="410" cy="156" r="5" fill="#203449"/><path d="M373 184Q388 195 402 182" fill="none" stroke="#203449" stroke-width="5" stroke-linecap="round"/>
+<!-- tunic/body --> <path d="M343 231Q384 213 426 233L458 341H316Z" fill="#9a6b43" stroke="#203449" stroke-width="7" stroke-linejoin="round"/>
+<!-- arms --> <path d="M338 255L293 314L376 357" fill="none" stroke="#203449" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><path d="M426 256L475 304L538 329" fill="none" stroke="#203449" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- desk --> <path d="M165 344H738L700 383H202Z" fill="#b98455" stroke="#203449" stroke-width="7" stroke-linejoin="round"/><path d="M220 382V483M683 382V483" stroke="#203449" stroke-width="16" stroke-linecap="round"/>
+<!-- paper and script --> <path d="M414 294L572 312L560 359L402 341Z" fill="#fff" stroke="#203449" stroke-width="4"/><text x="431" y="319" font-family="Arial,sans-serif" font-size="14" font-weight="800" fill="#176b9e" transform="rotate(7 431 319)">SCRIPT</text><path d="M427 330L536 342M423 339L501 349" stroke="#9abdd5" stroke-width="4" stroke-linecap="round"/>
+<!-- pen --> <path d="M508 300L557 335" stroke="#176b9e" stroke-width="9" stroke-linecap="round"/><path d="M557 335L565 342" stroke="#203449" stroke-width="5" stroke-linecap="round"/>
+<!-- feet --> <path d="M350 343L321 373M421 343L445 371" stroke="#203449" stroke-width="17" stroke-linecap="round"/>
+<text x="54" y="84" font-family="Arial,sans-serif" font-size="16" font-weight="800" letter-spacing="3" fill="#176b9e">IDEA → SCRIPT → SCENE</text>
+<text x="55" y="119" font-family="Arial,sans-serif" font-size="15" fill="#587286">One scene, one clear purpose.</text>
+</svg>
