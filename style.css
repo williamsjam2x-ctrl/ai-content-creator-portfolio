@@ -114,3 +114,92 @@ body.welcome-open{overflow:hidden}
 .site-footer{border-top-color:var(--line)}
 @media(max-width:520px){.welcome-screen:before{inset:8px}.welcome-content{padding:12px 8px}.welcome-portrait-wrap{width:158px;height:192px;margin-bottom:22px}.welcome-portrait{width:146px;height:180px}.welcome-overline{font-size:8px;letter-spacing:.12em}.welcome-content h1{font-size:clamp(32px,9vw,44px)}.welcome-description{max-width:290px;line-height:1.65}.welcome-footnote{font-size:8px;letter-spacing:.06em}.welcome-enter{min-height:48px}}
 @media(prefers-reduced-motion:reduce){.welcome-screen,.welcome-portrait{animation:none;transition:none}}
+
+
+/* Dark-slate visual refresh inspired by the reference portfolio.
+   Original portfolio copy and project content remain Oyatope Taiwo's own. */
+:root{
+ --sky:#a8dadc;--sky-deep:#1e90ff;--sky-pale:#26394b;--sky-wash:#172538;
+ --ink:#f4f7fb;--muted:#c2ccda;--line:#3a4b60;--white:#fff;--navy:#0f172a;
+ --radius:14px;--shadow:0 16px 38px rgba(0,0,0,.2);
+}
+html{background:#1e293b}
+body:not(.cv-page){
+ background:#1e293b;color:#f4f7fb;
+ font-family:'Poppins',Arial,sans-serif;
+ background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.055) 1px,transparent 0);
+ background-size:26px 26px;
+}
+body:not(.cv-page) a{color:#a8dadc}
+body:not(.cv-page) a:hover{color:#1e90ff}
+body:not(.cv-page) .site-header{
+ position:sticky;top:0;z-index:30;background:rgba(15,23,42,.96);
+ border-bottom:1px solid #3a4b60;backdrop-filter:blur(12px);
+}
+body:not(.cv-page) .brand,body:not(.cv-page) .site-header nav a{color:#f4f7fb}
+body:not(.cv-page) .brand-mark{background:#363960;color:#a8dadc;border-radius:9px}
+body:not(.cv-page) .brand small{color:#aebed0}
+body:not(.cv-page) .site-header nav .nav-cta{background:#1e90ff;color:#fff}
+body:not(.cv-page) .site-header nav a:not(.nav-cta)::after{background:#1e90ff}
+body:not(.cv-page) .hero{position:relative}
+body:not(.cv-page) .name-display span,body:not(.cv-page) .hero-statement span{color:#a8dadc}
+body:not(.cv-page) .hero-lede,body:not(.cv-page) .section-heading>p,
+body:not(.cv-page) .project-card>p,body:not(.cv-page) .skill-card p,
+body:not(.cv-page) .profile-card>p:not(.profile-label){color:#c2ccda}
+body:not(.cv-page) .eyebrow,body:not(.cv-page) .profile-label,
+body:not(.cv-page) .project-tag,body:not(.cv-page) .text-link,
+body:not(.cv-page) .skill-meta{color:#a8dadc}
+body:not(.cv-page) .profile-card,body:not(.cv-page) .project-card,
+body:not(.cv-page) .skill-card,body:not(.cv-page) .contact-invitation{
+ background:#0f172a;border-color:#3a4b60;box-shadow:0 16px 38px rgba(0,0,0,.18);
+}
+body:not(.cv-page) .profile-card{background:linear-gradient(145deg,#172538,#0f172a 78%)}
+body:not(.cv-page) .profile-photo{border-color:#1e293b;outline-color:#3a4b60}
+body:not(.cv-page) .location{border-top-color:#3a4b60;color:#c2ccda}
+body:not(.cv-page) .trust-strip,body:not(.cv-page) .tinted{
+ background:#172538;border-block-color:#3a4b60;
+}
+body:not(.cv-page) .trust-strip span{color:#c2ccda}
+body:not(.cv-page) .project-pills span,body:not(.cv-page) .quick-facts span{
+ background:#1e293b;border-color:#46566b;color:#d8e3ef;
+}
+body:not(.cv-page) .button.primary,body:not(.cv-page) .primary{
+ background:#1e90ff;color:#fff!important;border-color:#1e90ff;
+ box-shadow:0 8px 22px rgba(30,144,255,.18);
+}
+body:not(.cv-page) .button.primary:hover,body:not(.cv-page) .primary:hover{background:#1877d0}
+body:not(.cv-page) .button.secondary{
+ background:#0f172a;border-color:#46566b;color:#f4f7fb!important;
+}
+body:not(.cv-page) .button.secondary:hover{border-color:#1e90ff}
+body:not(.cv-page) .project-card:hover,body:not(.cv-page) .skill-card:hover{
+ border-color:#1e90ff;box-shadow:0 18px 42px rgba(0,0,0,.28);
+}
+body:not(.cv-page) .small-note,body:not(.cv-page) .project-number{color:#aebed0}
+body:not(.cv-page) .skill-icon{background:#26394b;color:#a8dadc}
+body:not(.cv-page) .contact-invitation p{color:#c2ccda}
+body:not(.cv-page) .site-footer{background:#0f172a;border-top-color:#3a4b60;color:#c2ccda}
+body:not(.cv-page) .site-footer a{color:#a8dadc}
+body:not(.cv-page) .welcome-screen{
+ background:#0f172a;color:#f4f7fb;
+}
+body:not(.cv-page) .welcome-screen:before{border-color:rgba(168,218,220,.28)}
+body:not(.cv-page) .welcome-grain{opacity:.12}
+body:not(.cv-page) .welcome-overline,body:not(.cv-page) .welcome-label{color:#a8dadc}
+body:not(.cv-page) .welcome-portrait-wrap{background:#1e293b;border-color:#3a4b60}
+body:not(.cv-page) .welcome-orbit{border-color:rgba(30,144,255,.4)}
+body:not(.cv-page) .welcome-description{color:#c2ccda}
+body:not(.cv-page) .welcome-enter{background:#1e90ff;border-color:#1e90ff;color:#fff}
+body:not(.cv-page) .welcome-enter:hover{background:#1877d0;border-color:#1877d0}
+body:not(.cv-page) .welcome-footnote{color:#aebed0}
+body:not(.cv-page) .reveal-ready{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+body:not(.cv-page) .reveal-ready.is-visible{opacity:1;transform:translateY(0)}
+@media(max-width:760px){
+ body:not(.cv-page) .site-header{position:relative;align-items:flex-start;flex-direction:column;gap:15px}
+ body:not(.cv-page) .site-header nav{width:100%;gap:10px;flex-wrap:wrap}
+ body:not(.cv-page) .site-header nav a{font-size:12px}
+ body:not(.cv-page) .hero{gap:30px}
+}
+@media(prefers-reduced-motion:reduce){
+ body:not(.cv-page) .reveal-ready{opacity:1;transform:none;transition:none}
+}
