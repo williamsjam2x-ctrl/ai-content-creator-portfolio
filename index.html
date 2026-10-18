@@ -85,6 +85,30 @@ body.menu-open .side-nav{transform:translateX(0)}
 .growth-bars i{display:block;width:4px;border-radius:2px 2px 0 0;background:#a8dadc}.growth-bars i:nth-child(1){height:6px}.growth-bars i:nth-child(2){height:10px}.growth-bars i:nth-child(3){height:14px}.growth-bars i:nth-child(4){height:19px}
 @media(max-width:700px){.social-showcase{height:280px;margin:0 0 22px}.showcase-photo-one{width:45%;height:105px}.showcase-photo-two{width:43%;height:112px}.showcase-photo-three{width:43%;height:96px}.profile-sticker{width:116px}.profile-sticker img{height:126px}.floating-badge{padding:8px 9px}.automation-badge{bottom:10px;left:7px}.growth-badge{top:112px;right:7px}}
 </style>
+
+<style id="portfolio-visual-demo">
+/* Visual storytelling cards + tap-to-preview colour themes */
+.visual-story-image{display:block;width:calc(100% + 52px);height:220px;object-fit:cover;margin:-26px -26px 20px;border-radius:17px 17px 0 0;border-bottom:1px solid var(--line);background:#eaf6ff}
+.visual-story-caption{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:-7px 0 18px;color:var(--muted);font-size:10px;letter-spacing:.04em}
+.visual-story-caption strong{color:var(--blue);font-size:10px}
+.theme-demo{position:fixed;right:14px;top:12px;z-index:75;display:flex;align-items:center;gap:8px;max-width:calc(100vw - 86px);padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.96);color:#172b3a;box-shadow:0 8px 25px rgba(18,48,71,.15);cursor:pointer;font-size:10px;font-weight:800;letter-spacing:.01em}
+.theme-demo:focus-visible{outline:3px solid #1685cf;outline-offset:3px}
+.theme-demo-swatches{display:flex;gap:3px}
+.theme-demo-swatches i{display:block;width:11px;height:11px;border-radius:50%;border:1px solid rgba(0,0,0,.12)}
+.theme-demo-swatches i:nth-child(1){background:#1685cf}.theme-demo-swatches i:nth-child(2){background:#a78bfa}.theme-demo-swatches i:nth-child(3){background:#f59e7a}.theme-demo-swatches i:nth-child(4){background:#4ab89a}
+body[data-palette="lavender"]{--blue:#b69aff;--blue2:#d1c1ff;--line:rgba(182,154,255,.28);--sky:#9b7cf5;--sky-deep:#7654d6;--sky-pale:#f0eaff;--sky-wash:#faf7ff}
+body[data-palette="peach"]{--blue:#ffad8b;--blue2:#ffd0bb;--line:rgba(255,173,139,.32);--sky:#f59e7a;--sky-deep:#cf6945;--sky-pale:#fff0e8;--sky-wash:#fff9f5}
+body[data-palette="mint"]{--blue:#75d7bd;--blue2:#a6ead8;--line:rgba(117,215,189,.3);--sky:#4ab89a;--sky-deep:#21866e;--sky-pale:#e4faf3;--sky-wash:#f3fffb}
+body[data-palette="sky"]{--blue:#1685cf;--blue2:#69bdf4;--line:rgba(22,133,207,.2);--sky:#1685cf;--sky-deep:#0869a9;--sky-pale:#eaf6ff;--sky-wash:#f6fbff}
+body[data-palette="lavender"] .eyebrow,body[data-palette="peach"] .eyebrow,body[data-palette="mint"] .eyebrow,body[data-palette="sky"] .eyebrow,
+body[data-palette="lavender"] .project-type,body[data-palette="peach"] .project-type,body[data-palette="mint"] .project-type,body[data-palette="sky"] .project-type,
+body[data-palette="lavender"] .text-link,body[data-palette="peach"] .text-link,body[data-palette="mint"] .text-link,body[data-palette="sky"] .text-link{color:var(--sky-deep)}
+body[data-palette="lavender"] .primary,body[data-palette="peach"] .primary,body[data-palette="mint"] .primary,body[data-palette="sky"] .primary,
+body[data-palette="lavender"] .site-header nav .nav-cta,body[data-palette="peach"] .site-header nav .nav-cta,body[data-palette="mint"] .site-header nav .nav-cta,body[data-palette="sky"] .site-header nav .nav-cta{background:var(--sky-deep)}
+body[data-palette="lavender"] .project-card,body[data-palette="peach"] .project-card,body[data-palette="mint"] .project-card,body[data-palette="sky"] .project-card,
+body[data-palette="lavender"] .skill-card,body[data-palette="peach"] .skill-card,body[data-palette="mint"] .skill-card,body[data-palette="sky"] .skill-card{border-color:var(--line)}
+@media(max-width:520px){.theme-demo{right:10px;top:10px;padding:7px 8px;font-size:9px}.visual-story-image{height:185px;margin:-21px -21px 17px;width:calc(100% + 42px)}.visual-story-caption{font-size:9px}}
+</style>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -96,6 +120,8 @@ body.menu-open .side-nav{transform:translateX(0)}
     <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="side-nav" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
+<button class="theme-demo" id="theme-demo" type="button" aria-label="Change website colour theme" title="Tap to preview another colour"><span id="theme-demo-label">Try a colour</span><span class="theme-demo-swatches" aria-hidden="true"><i></i><i></i><i></i><i></i></span> ↻</button>
+
 <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
 <nav class="side-nav" id="side-nav" aria-label="Mobile navigation" aria-hidden="true" inert>
   <a href="#about">About me</a><a href="#vision">Vision</a><a href="#skills">Skills & tools</a><a href="#work">Selected projects</a><a href="#services">Services</a><a href="#contact">Contact</a><a href="cv.html">View CV ↗</a>
@@ -141,8 +167,8 @@ body.menu-open .side-nav{transform:translateX(0)}
 <section class="content wrap" id="scriptwriting">
   <div class="section-head reveal"><div><p class="eyebrow">SCRIPTWRITING & PROMPT DESIGN</p><h2>Creative ideas, prepared for production.</h2></div><p>Story beats, narration purpose, visual direction and continuity notes turn a concept into a production-ready plan.</p></div>
   <div class="project-grid">
-    <article class="project reveal"><div class="project-top"><span class="project-type">SCRIPTWRITING SAMPLE</span><span class="project-number">01</span></div><h3>AI Movie Behind-the-Scenes Prompt Framework</h3><p>A structured prompt framework for planning a believable behind-the-scenes sequence: establish the set, reveal practical effects, show the crew at work and preserve camera, lighting and prop continuity between beats.</p><div class="pills"><span>Scene logic</span><span>Camera & blocking</span><span>Practical effects</span><span>Sound cues</span><span>Continuity</span></div></article>
-    <article class="project reveal"><div class="project-top"><span class="project-type">SCRIPT & STORY DEVELOPMENT</span><span class="project-number">02</span></div><h3>Story-led video script structure</h3><p>Build around a strong opening question, a sequence of discoveries, purposeful narration, visual evidence and a satisfying payoff. Each scene has a clear job; voice-over adds context or mystery instead of simply describing visible action.</p><div class="pills"><span>Hook & payoff</span><span>Scene beats</span><span>Voice-over POV</span><span>Visual continuity</span></div></article>
+    <article class="project reveal"><img class="visual-story-image" src="https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400" alt="Close-up of a hand writing notes with a pen in an open notebook on a desk" loading="lazy"><div class="visual-story-caption"><strong>THE WRITING DESK</strong><span>Idea → script → scenes</span></div><div class="project-top"><span class="project-type">SCRIPTWRITING SAMPLE</span><span class="project-number">01</span></div><h3>AI Movie Behind-the-Scenes Prompt Framework</h3><p>A structured prompt framework for planning a believable behind-the-scenes sequence: establish the set, reveal practical effects, show the crew at work and preserve camera, lighting and prop continuity between beats.</p><div class="pills"><span>Scene logic</span><span>Camera & blocking</span><span>Practical effects</span><span>Sound cues</span><span>Continuity</span></div></article>
+    <article class="project reveal"><img class="visual-story-image" src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400" alt="Person seated at a desk writing and planning on paper" loading="lazy"><div class="visual-story-caption"><strong>STORY DEVELOPMENT</strong><span>Hook → discovery → payoff</span></div><div class="project-top"><span class="project-type">SCRIPT & STORY DEVELOPMENT</span><span class="project-number">02</span></div><h3>Story-led video script structure</h3><p>Build around a strong opening question, a sequence of discoveries, purposeful narration, visual evidence and a satisfying payoff. Each scene has a clear job; voice-over adds context or mystery instead of simply describing visible action.</p><div class="pills"><span>Hook & payoff</span><span>Scene beats</span><span>Voice-over POV</span><span>Visual continuity</span></div></article>
   </div>
 </section>
 
@@ -194,6 +220,17 @@ const topButton=document.getElementById('to-top');
 function scrollState(){topButton.classList.toggle('visible',window.scrollY>420)}
 window.addEventListener('scroll',scrollState,{passive:true});scrollState();
 document.getElementById('year').textContent=String(new Date().getFullYear());
+
+const themeButton=document.getElementById('theme-demo');
+const themeLabel=document.getElementById('theme-demo-label');
+const palettes=['sky','lavender','peach','mint'];
+const paletteNames={sky:'Sky blue',lavender:'Lavender',peach:'Peach',mint:'Mint'};
+let paletteIndex=0;
+try{const saved=localStorage.getItem('oyatope-portfolio-palette');if(saved&&palettes.includes(saved))paletteIndex=palettes.indexOf(saved)}catch(e){}
+function applyPalette(){const name=palettes[paletteIndex];document.body.dataset.palette=name;themeLabel.textContent=paletteNames[name];themeButton.setAttribute('aria-label','Website colour theme: '+paletteNames[name]+'. Tap to change colour.');try{localStorage.setItem('oyatope-portfolio-palette',name)}catch(e){}}
+applyPalette();
+themeButton.addEventListener('click',()=>{paletteIndex=(paletteIndex+1)%palettes.length;applyPalette()});
+
 const revealEls=document.querySelectorAll('.reveal');
 if('IntersectionObserver' in window&&!reduced){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in-view');observer.unobserve(entry.target)}}),{threshold:.12});revealEls.forEach(el=>observer.observe(el));}else revealEls.forEach(el=>el.classList.add('in-view'));
 const roles=['AI Automation Expert & Consultant','AI Content Creator','Creative Technology Specialist'];
