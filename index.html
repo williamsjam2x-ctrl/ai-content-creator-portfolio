@@ -88,7 +88,7 @@ body.menu-open .side-nav{transform:translateX(0)}
   </div>
 </header>
 <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
-<nav class="side-nav" id="side-nav" aria-label="Mobile navigation" aria-hidden="true">
+<nav class="side-nav" id="side-nav" aria-label="Mobile navigation" aria-hidden="true" inert>
   <a href="#about">About me</a><a href="#vision">Vision</a><a href="#skills">Skills & tools</a><a href="#work">Selected projects</a><a href="#services">Services</a><a href="#contact">Contact</a><a href="cv.html">View CV ↗</a>
   <p class="side-note">Research carefully. Build deliberately. Test before release.</p>
 </nav>
@@ -175,11 +175,11 @@ body.menu-open .side-nav{transform:translateX(0)}
 'use strict';
 const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const toggle=document.getElementById('menu-toggle'), side=document.getElementById('side-nav'), overlay=document.getElementById('menu-overlay');
-function setMenu(open){document.body.classList.toggle('menu-open',open);toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');side.setAttribute('aria-hidden',String(!open));overlay.setAttribute('aria-hidden',String(!open));if(open){const firstLink=side.querySelector('a');if(firstLink)firstLink.focus()}else{toggle.focus()}}
+function setMenu(open){document.body.classList.toggle('menu-open',open);toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');side.setAttribute('aria-hidden',String(!open));side.inert=!open;overlay.setAttribute('aria-hidden',String(!open));if(open){const firstLink=side.querySelector('a');if(firstLink)firstLink.focus()}else{toggle.focus()}}
 toggle.addEventListener('click',()=>setMenu(toggle.getAttribute('aria-expanded')!=='true'));
 overlay.addEventListener('click',()=>setMenu(false));
 side.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
-document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&document.body.classList.contains('menu-open'))setMenu(false)});
 const topButton=document.getElementById('to-top');
 function scrollState(){topButton.classList.toggle('visible',window.scrollY>420)}
 window.addEventListener('scroll',scrollState,{passive:true});scrollState();
