@@ -16,6 +16,30 @@
 <title>Oyatope Taiwo | AI Content Creator & Workflow Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
 <style>.contact-invitation{margin:28px auto;padding:20px;border:1px solid #3a4b60;border-radius:12px;background:#0f172a}.contact-invitation p{line-height:1.6}.contact-invitation a{display:inline-block}@media(max-width:600px){.contact-invitation{padding:16px}}</style>
+
+<style>
+/* Cross-discipline creative portfolio cards */
+.creative-showcase{overflow:hidden}
+.creative-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:28px}
+.creative-card{min-width:0;overflow:hidden;border:1px solid #dbe5ef;border-radius:18px;background:#fff;box-shadow:0 12px 32px rgba(15,23,42,.07);transition:transform .25s ease,box-shadow .25s ease}
+.creative-card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(15,23,42,.12)}
+.creative-image-link,.stickman-art,.workflow-art{display:flex;position:relative;min-height:220px;align-items:center;justify-content:center;overflow:hidden;background:#dbeafe}
+.creative-image-link img{width:100%;height:250px;object-fit:cover;display:block;transition:transform .35s ease}
+.creative-card:hover .creative-image-link img{transform:scale(1.035)}
+.creative-image-label{position:absolute;left:16px;bottom:14px;padding:7px 10px;border-radius:6px;background:rgba(15,23,42,.86);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.09em}
+.creative-card-body{padding:22px}
+.creative-card-body h3{margin:10px 0}
+.creative-card-body p:not(.project-tag){line-height:1.7;color:#475569}
+.stickman-art{background:linear-gradient(135deg,#dbeafe,#f8fafc)}
+.stickman-art svg{width:min(100%,520px);height:auto}
+.workflow-art{flex-wrap:wrap;gap:12px;padding:30px 18px 55px;background:linear-gradient(135deg,#e0f2fe,#f8fafc);color:#334155}
+.workflow-node{padding:14px 12px;border:1px solid #93c5fd;border-radius:10px;background:#fff;font-size:.76rem;font-weight:700;letter-spacing:.04em}
+.workflow-check{width:100%;text-align:center;color:#166534;font-size:.85rem;font-weight:600}
+.visual-note{margin-top:18px;font-size:.82rem;color:#64748b;line-height:1.6}
+@media(max-width:700px){.creative-grid{grid-template-columns:1fr;gap:16px}.creative-image-link img{height:220px}.creative-card-body{padding:18px}.creative-card:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){.creative-card,.creative-image-link img{transition:none}.creative-card:hover,.creative-card:hover .creative-image-link img{transform:none}}
+</style>
+
 </head>
 <body>
 <div class="welcome-screen" id="welcome-screen" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
@@ -72,6 +96,34 @@
 <article class="project-card"><div class="project-top"><span class="project-tag">CASE STUDY · STORY DEVELOPMENT</span><span class="project-number">02 / 03</span></div><h3>Wildlife and science storytelling</h3><p>I plan story-led explainers around a clear question, reliable source checks, scene purpose and audience curiosity. The goal is to make complex animal or science ideas easier to follow without treating speculation as fact.</p><p class="small-note">Focus: research structure, narrative planning, visual evidence and review checkpoints.</p></article>
 <article class="project-card"><div class="project-top"><span class="project-tag">CASE STUDY · CREATIVE PRODUCTION</span><span class="project-number">03 / 03</span></div><h3>AI-assisted video planning</h3><p>I break a video idea into script beats, narration purpose, shot choices, editing rhythm, captions and sound. I pay attention to continuity and whether each visual helps the viewer understand the story.</p><p class="small-note">Focus: pre-production, scene planning, editing rhythm and sound direction.</p></article>
 </div>
+</section>
+<section id="creative-work" class="content-section section-wrap creative-showcase">
+  <div class="section-heading"><div><p class="eyebrow">CREATIVE WORK & VISUAL STORYTELLING</p><h2>Different stories. One thoughtful production process.</h2></div><p>My portfolio covers wildlife and science, Stickman explainers, cinematic AI filmmaking, and automation. Each project has its own visual style and audience.</p></div>
+  <div class="creative-grid">
+    <article class="creative-card">
+      <a class="creative-image-link" href="https://www.pexels.com/search/videos/wildlife%20%2B%20nature/" target="_blank" rel="noopener" aria-label="Explore wildlife footage on Pexels">
+        <img src="https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Wildlife in its natural environment" loading="lazy">
+        <span class="creative-image-label">WILDMIND STORIES</span>
+      </a>
+      <div class="creative-card-body"><p class="project-tag">WILDLIFE · NATURE · SCIENCE</p><h3>Wildlife storytelling</h3><p>Animal behaviour and science stories built around curiosity, source checks, visual evidence and a clear story payoff. Accuracy comes before drama.</p><a class="text-link" href="https://www.pexels.com/search/videos/wildlife%20%2B%20nature/" target="_blank" rel="noopener">Explore Pexels wildlife footage ↗</a></div>
+    </article>
+    <article class="creative-card">
+      <div class="stickman-art" role="img" aria-label="Original simple stick figure illustration on a pale blue background"><svg viewBox="0 0 520 260" aria-hidden="true"><circle cx="260" cy="73" r="34" fill="#f8fafc" stroke="#172033" stroke-width="8"/><path d="M260 109 L260 184 M260 132 L205 159 M260 132 L315 154 M260 184 L218 232 M260 184 L302 232" fill="none" stroke="#172033" stroke-width="11" stroke-linecap="round"/><path d="M235 119 Q260 105 285 119 L295 176 L225 176 Z" fill="#b8794b" stroke="#172033" stroke-width="5"/><path d="M337 61 L379 61 L379 104 L337 104 Z" fill="#fff" stroke="#4c78a8" stroke-width="4"/><path d="M348 75 L368 75 M348 87 L365 87" stroke="#4c78a8" stroke-width="3" stroke-linecap="round"/><path d="M148 206 Q177 187 199 206" fill="none" stroke="#4c78a8" stroke-width="5" stroke-linecap="round"/></svg><span class="creative-image-label">STICKMAN EXPLAINERS</span></div>
+      <div class="creative-card-body"><p class="project-tag">HISTORY · SURVIVAL · BIOLOGY</p><h3>Stickman explainers</h3><p>Simple 2D visuals help viewers follow complex ideas. Each scene must support understanding, emotion, discovery, meaning or story.</p><a class="text-link" href="#scriptwriting">View script and prompt approach ↗</a></div>
+    </article>
+    <article class="creative-card">
+      <a class="creative-image-link" href="https://www.pexels.com/video/a-person-doing-photo-editing-using-laptop-7610993/" target="_blank" rel="noopener" aria-label="View creative editing footage on Pexels">
+        <img src="https://images.pexels.com/photos/7610993/pexels-photo-7610993.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Creative professional working on visual content using a laptop" loading="lazy">
+        <span class="creative-image-label">AI FILMMAKING LABORATORY</span>
+      </a>
+      <div class="creative-card-body"><p class="project-tag">CINEMATIC · EDITING · SOUND</p><h3>AI filmmaking and production</h3><p>Film concepts translated into scene plans, camera movement, continuity, practical sound, editing rhythm and purposeful voice-over.</p><a class="text-link" href="https://www.pexels.com/video/a-person-doing-photo-editing-using-laptop-7610993/" target="_blank" rel="noopener">View Pexels production reference ↗</a></div>
+    </article>
+    <article class="creative-card">
+      <div class="workflow-art" role="img" aria-label="Illustration of a checked workflow moving through research, production and review"><div class="workflow-node">RESEARCH</div><span>→</span><div class="workflow-node">CREATE</div><span>→</span><div class="workflow-node">REVIEW</div><div class="workflow-check">✓ Human approval before release</div><span class="creative-image-label">AI AUTOMATION</span></div>
+      <div class="creative-card-body"><p class="project-tag">WORKFLOW · VALIDATION · QA</p><h3>AI automation systems</h3><p>Structured workflows with defined inputs, validation, error handling, human approval and traceable results. Automation is tested before it is trusted.</p><a class="text-link" href="si-automation-pipeline.html">Read the workflow case study ↗</a></div>
+    </article>
+  </div>
+  <p class="visual-note">Visual references: Pexels. The Stickman and workflow illustrations are original CSS/SVG artwork for this portfolio. Stock visuals are illustrative references, not claims of original footage.</p>
 </section>
 <section id="scriptwriting" class="content-section section-wrap">
 <div class="section-heading"><div><p class="eyebrow">SCRIPTWRITING & PROMPT DESIGN</p><h2>From a creative brief to a production-ready plan.</h2></div><p>I develop scripts and structured prompts for AI-assisted video, cinematic scenes, explainers and story-led short-form content. The writing connects story intent to what the viewer sees and hears.</p></div>
