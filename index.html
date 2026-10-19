@@ -106,6 +106,37 @@ body[data-palette="lavender"] .skill-card,body[data-palette="peach"] .skill-card
 .stickman-visual-pair .stickman-photo{object-position:center;background:#e7edf2}
 @media(max-width:700px){.stickman-visual-pair{grid-template-columns:1fr}.stickman-visual-pair img{height:auto;min-height:0;max-height:280px}.stickman-visual-pair .stickman-board{min-height:220px;object-fit:contain}}
 </style>
+
+<style id="mobile-first-safety-overrides">
+/* MOBILE-FIRST SAFETY OVERRIDES: keep the portfolio readable on narrow phone screens */
+html { width:100%; max-width:100%; overflow-x:clip; }
+body { width:100%; max-width:100%; min-width:0; overflow-x:clip; }
+img, video, iframe, svg, canvas { max-width:100%; }
+@media screen and (max-width:700px) {
+  .wrap { width:calc(100% - 30px) !important; max-width:100% !important; }
+  header, main, section, footer, nav, .hero, .hero-copy, .profile-card,
+  .about-layout, .section-head, .project-grid, .skill-grid, .service-grid,
+  .contact-box, .footer-inner, .principles-inner { min-width:0 !important; max-width:100%; }
+  .desktop-nav { display:none !important; }
+  .menu-toggle { display:block !important; }
+  .hero { display:grid !important; grid-template-columns:minmax(0,1fr) !important; min-height:0 !important; }
+  .hero-copy, .profile-card { width:100% !important; min-width:0 !important; }
+  .hero h1 { font-size:clamp(36px,10vw,52px) !important; overflow-wrap:anywhere; }
+  .project-grid, .skill-grid, .service-grid, .about-layout { grid-template-columns:minmax(0,1fr) !important; }
+  .project, .skill, .service, .contact-box, .project-preview { min-width:0 !important; max-width:100% !important; }
+  .video-frame { width:100% !important; max-width:100% !important; }
+  .video-frame iframe { width:100% !important; max-width:100% !important; }
+  .actions, .contact-actions { flex-wrap:wrap !important; }
+  .actions .btn, .contact-actions .btn { max-width:100%; white-space:normal; }
+  pre, code, p, h1, h2, h3, a { overflow-wrap:anywhere; }
+}
+@media screen and (max-width:430px) {
+  .wrap { width:calc(100% - 24px) !important; }
+  .hero h1 { font-size:clamp(33px,9.5vw,42px) !important; }
+  .project { padding:18px !important; }
+}
+</style>
+
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
