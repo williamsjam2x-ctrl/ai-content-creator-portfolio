@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">Stickman explainer storyboard and content workflow</title>
+<desc id="desc">A clean flat stick figure with a simple round head, expressive face and line-art body stands beside a storyboard workflow on a premium navy and teal canvas.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#142943"/><stop offset="1" stop-color="#07111f"/></linearGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#172c44"/><stop offset="1" stop-color="#0d1b2d"/></linearGradient></defs>
+<rect width="1200" height="620" rx="28" fill="url(#bg)"/>
+<g opacity=".14" stroke="#a8dadc"><path d="M40 100H1160M40 180H1160M40 260H1160M40 340H1160M40 420H1160M40 500H1160"/><path d="M120 40V580M220 40V580M320 40V580M420 40V580M520 40V580M620 40V580M720 40V580M820 40V580M920 40V580M1020 40V580M1120 40V580"/></g>
+<text x="68" y="70" fill="#a8dadc" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="4">STICKMAN EXPLAINER LAB</text>
+<circle cx="280" cy="230" r="140" fill="#a8dadc" fill-opacity=".05" stroke="#a8dadc" stroke-opacity=".35" stroke-width="2"/>
+<g stroke="#f5f7fb" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<circle cx="280" cy="165" r="55" fill="#f5f7fb" stroke="#a8dadc" stroke-width="5"/>
+<path d="M280 220V360M280 258L190 310M280 258L370 300M280 360L220 465M280 360L340 465"/>
+</g>
+<g fill="#15283d"><circle cx="261" cy="159" r="5"/><circle cx="299" cy="159" r="5"/></g><path d="M262 183Q280 199 298 183" stroke="#15283d" stroke-width="5" fill="none" stroke-linecap="round"/>
+<rect x="455" y="115" width="670" height="380" rx="24" fill="url(#panel)" stroke="#a8dadc" stroke-opacity=".55" stroke-width="2"/>
+<text x="492" y="160" fill="#a8dadc" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">FROM IDEA TO EPISODE</text>
+<g font-family="Arial,sans-serif" fill="#f5f7fb">
+<rect x="492" y="190" width="280" height="100" rx="15" fill="#0b1422" stroke="#a8dadc" stroke-opacity=".45"/><circle cx="525" cy="223" r="13" fill="#a8dadc"/><text x="550" y="228" font-size="18" font-weight="700">01 · Research</text><text x="515" y="261" font-size="13" opacity=".75">Find the audience question</text>
+<rect x="800" y="190" width="288" height="100" rx="15" fill="#0b1422" stroke="#a8dadc" stroke-opacity=".45"/><circle cx="833" cy="223" r="13" fill="#d4b36a"/><text x="858" y="228" font-size="18" font-weight="700">02 · Script</text><text x="823" y="261" font-size="13" opacity=".75">Build a clear story arc</text>
+<path d="M772 240H800" stroke="#a8dadc" stroke-width="3"/><path d="M790 232l10 8-10 8" fill="none" stroke="#a8dadc" stroke-width="3"/>
+<rect x="492" y="320" width="280" height="100" rx="15" fill="#0b1422" stroke="#a8dadc" stroke-opacity=".45"/><circle cx="525" cy="353" r="13" fill="#d4b36a"/><text x="550" y="358" font-size="18" font-weight="700">03 · Storyboard</text><text x="515" y="391" font-size="13" opacity=".75">One readable action per scene</text>
+<rect x="800" y="320" width="288" height="100" rx="15" fill="#0b1422" stroke="#a8dadc" stroke-opacity=".45"/><circle cx="833" cy="353" r="13" fill="#a8dadc"/><text x="858" y="358" font-size="18" font-weight="700">04 · Quality check</text><text x="823" y="391" font-size="13" opacity=".75">Continuity, sound and pacing</text>
+<path d="M632 290V320M940 290V320" stroke="#a8dadc" stroke-width="3"/><path d="M624 310l8 10 8-10M932 310l8 10 8-10" fill="none" stroke="#a8dadc" stroke-width="3"/>
+<rect x="492" y="445" width="596" height="28" rx="9" fill="#203d43"/><text x="790" y="464" text-anchor="middle" font-size="12" font-weight="700" fill="#bdf5db" letter-spacing="2">SCRIPT · VISUALS · EDIT · REVIEW</text>
+</g>
+<text x="600" y="555" text-anchor="middle" fill="#dce9f2" font-family="Arial,sans-serif" font-size="15" letter-spacing="3">SIMPLE CHARACTER · PURPOSEFUL STORYTELLING</text>
+</svg>
