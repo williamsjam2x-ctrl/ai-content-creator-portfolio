@@ -109,6 +109,19 @@ body[data-palette="lavender"] .project-card,body[data-palette="peach"] .project-
 body[data-palette="lavender"] .skill-card,body[data-palette="peach"] .skill-card,body[data-palette="mint"] .skill-card,body[data-palette="sky"] .skill-card{border-color:var(--line)}
 @media(max-width:520px){.theme-demo{right:10px;top:10px;padding:7px 8px;font-size:9px}.visual-story-image{height:185px;margin:-21px -21px 17px;width:calc(100% + 42px)}.visual-story-caption{font-size:9px}}
 </style>
+<style id="ai-assistance-visuals">
+.ai-visual-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
+.ai-visual-card{overflow:hidden;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(20,34,56,.97),rgba(11,20,34,.98));box-shadow:var(--shadow)}
+.ai-visual-card>img{display:block;width:100%;height:230px;object-fit:cover;background:#0b1422;border-bottom:1px solid var(--line)}
+.ai-visual-card .ai-card-copy{padding:22px}
+.ai-visual-card h3{font-size:19px;line-height:1.3;margin:0 0 8px}
+.ai-visual-card p{font-size:12px;line-height:1.85;color:var(--muted);margin:0}
+.ai-visual-card .pills{margin-bottom:0}
+.ai-workflow-art{display:block;width:100%;height:auto;background:#07111e}
+.ai-visual-card.wide{grid-column:1/-1}
+.ai-visual-card.wide .ai-card-copy{padding:22px 25px}
+@media(max-width:700px){.ai-visual-grid{grid-template-columns:1fr}.ai-visual-card.wide{grid-column:auto}.ai-visual-card>img{height:200px}}
+</style>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -169,6 +182,16 @@ body[data-palette="lavender"] .skill-card,body[data-palette="peach"] .skill-card
   <div class="project-grid">
     <article class="project reveal"><img class="visual-story-image" src="https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400" alt="Close-up of a hand writing notes with a pen in an open notebook on a desk" loading="lazy"><div class="visual-story-caption"><strong>THE WRITING DESK</strong><span>Idea → script → scenes</span></div><div class="project-top"><span class="project-type">SCRIPTWRITING SAMPLE</span><span class="project-number">01</span></div><h3>AI Movie Behind-the-Scenes Prompt Framework</h3><p>A structured prompt framework for planning a believable behind-the-scenes sequence: establish the set, reveal practical effects, show the crew at work and preserve camera, lighting and prop continuity between beats.</p><div class="pills"><span>Scene logic</span><span>Camera & blocking</span><span>Practical effects</span><span>Sound cues</span><span>Continuity</span></div></article>
     <article class="project reveal"><img class="visual-story-image" src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400" alt="Person seated at a desk writing and planning on paper" loading="lazy"><div class="visual-story-caption"><strong>STORY DEVELOPMENT</strong><span>Hook → discovery → payoff</span></div><div class="project-top"><span class="project-type">SCRIPT & STORY DEVELOPMENT</span><span class="project-number">02</span></div><h3>Story-led video script structure</h3><p>Build around a strong opening question, a sequence of discoveries, purposeful narration, visual evidence and a satisfying payoff. Each scene has a clear job; voice-over adds context or mystery instead of simply describing visible action.</p><div class="pills"><span>Hook & payoff</span><span>Scene beats</span><span>Voice-over POV</span><span>Visual continuity</span></div></article>
+  </div>
+</section>
+
+<section class="content wrap" id="ai-assistance">
+  <div class="section-head reveal"><div><p class="eyebrow">AI ASSISTANCE & WORKFLOW DEMONSTRATION</p><h2>Show the work. Show how the tools connect.</h2></div><p>AI can support research, drafting and repetitive steps. A clear workflow connects the tools, checks the output and keeps a person in control of important decisions.</p></div>
+  <div class="ai-visual-grid">
+    <article class="ai-visual-card reveal"><img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Colleagues working together around computers, illustrating people collaborating with digital tools" loading="lazy"><div class="ai-card-copy"><h3>People + AI assistance</h3><p>AI is a working assistant—not a replacement for judgement. It can help organize information, draft content, summarize research and prepare work for human review.</p><div class="pills"><span>Research support</span><span>Drafting</span><span>Human review</span></div></div></article>
+    <article class="ai-visual-card reveal"><img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Person using a laptop in a digital work setting, representing AI-supported work" loading="lazy"><div class="ai-card-copy"><h3>Connected tools, fewer manual handoffs</h3><p>A workflow can pass structured information between tools, route tasks, flag missing details and record outcomes instead of relying on repeated copy-and-paste.</p><div class="pills"><span>Connected apps</span><span>Routing</span><span>Error handling</span></div></div></article>
+    <article class="ai-visual-card wide reveal"><img class="ai-workflow-art" src="assets/ai-workflow-demonstration.svg" alt="Workflow diagram showing research, an AI assistant robot, automation between tools, validation and human approval" loading="lazy"><div class="ai-card-copy"><h3>Workflow demonstration: from input to reviewed result</h3><p><strong>Research → AI assistant → automation → validation → human approval.</strong> This visual explains the logic of a workflow. The exact integrations and actions are selected for each project; the approval step keeps the owner in control before important work is released.</p><div class="pills"><span>Clear stages</span><span>Validation</span><span>Human approval</span><span>Traceable decisions</span></div></div></article>
+    <article class="ai-visual-card wide reveal"><img class="ai-workflow-art" src="assets/luxury-stickman-workflow.svg" alt="Premium luxury Stickman creative director beside an AI-assisted workflow dashboard" loading="lazy"><div class="ai-card-copy"><h3>Luxury Stickman: creative systems in action</h3><p>The Stickman character now has a premium editorial look and appears beside a workflow dashboard, linking creative planning with structured automation.</p><a class="text-link" href="stickman-explainer.html">Explore the Stickman Explainer project ↗</a></div></article>
   </div>
 </section>
 
